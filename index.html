@@ -6,9 +6,10 @@
       /* Put styles for sections 1.1, 1.2, 1.3 and 1.4 here */
 
       article {
-        margin: 20px 0;
-        padding: 20px;
+        margin: 40px;
+        padding: 40px;
         border: 1px solid black;
+        overflow: auto;
       }
 
       .style-me1 {
@@ -34,13 +35,14 @@
       /* II. Box model and common properties */
 
       .box {
+        position: relative;
         padding: 20px 2px 300px 5%;
         height: 4px;
         width: 500px;
         border-style: dotted;
         border-width: 10px;
         border-radius: 30px;
-        margin: 5px;
+        margin: 20px;
 
       }
 
@@ -53,6 +55,21 @@
 
 
       /* III. Position */
+
+      .position-absolute {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        z-index: -1;
+      }
+      .position-relative {
+        position: relative;
+        bottom: 10px;
+      }
+      .position-sticky {
+        position: sticky;
+      }
+
 
       /* IV. Styling text */
 
