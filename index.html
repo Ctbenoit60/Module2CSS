@@ -44,11 +44,11 @@
 
       }
 
-      .box {
+      #corgi {
         background-image: url(assets/images/ellie.svg);
-        background-size: auto;
+        background-size: contain;
         background-position: right;
-        background-repeat: no-repeat, repeat;
+        background-repeat: no-repeat;
       }
 
 
@@ -99,8 +99,8 @@
 
     <article>
       <h2>II. Box model and common properties</h2>
-      <div class="box">I'm the first box.</div>
-      <div class="box">
+      <div class="box" id="corgi">I'm the first box.</div>
+      <div class="box" >
         <p>I'm second and I have a lot of content. In publishing and graphic
             design, Lorem ipsum is a placeholder text commonly used to demonstrate
             the visual form of a document or a typeface without relying on
@@ -112,7 +112,7 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
             qui officia deserunt mollit anim id est laborum."</p>
       </div>
-      <div class="box" style="height: 200px">
+      <div class="box" style="height: 200px" >
         My height is set using directly using style attribute.
       </div>
     </article>
